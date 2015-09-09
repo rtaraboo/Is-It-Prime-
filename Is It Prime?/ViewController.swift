@@ -10,6 +10,75 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var number: UITextField!
+    
+    @IBOutlet var results: UILabel!
+    
+    @IBAction func button(sender: AnyObject) {
+        
+        var numberInt = number.text.toInt()
+        
+        if numberInt != nil {
+            
+            var unwrappedNum = numberInt!
+            
+            var isPrime = true
+            
+            if unwrappedNum == 1 {
+                
+                isPrime = false
+            }
+            
+            if unwrappedNum != 2 && unwrappedNum != 1 {
+                
+                for var i = 2; i < unwrappedNum; i++ {
+                    
+                    if unwrappedNum % i == 0 {
+                        
+                        isPrime = false
+                    }
+                }
+                
+            }
+            
+            if isPrime == true {
+                
+                results.text = "\(unwrappedNum) is a PRIME!"
+            }
+            
+            else {
+            
+                results.text = "\(unwrappedNum) is NOT a prime!"
+            }
+        
+        }
+        
+        else {
+         
+        
+        results.text = "Please enter a number."
+        
+        
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,4 +91,6 @@ class ViewController: UIViewController {
 
 
 }
+
+
 
