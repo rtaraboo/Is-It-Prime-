@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     @IBAction func button(sender: AnyObject) {
         
-        var numberInt = number.text.toInt()
+        var numberInt = Int(number.text!)
         
         if numberInt != nil {
             

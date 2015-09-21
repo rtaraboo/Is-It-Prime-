@@ -156,6 +156,8 @@
 		7314594C1BA0C15A000257FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = RLDT;
 				TargetAttributes = {
@@ -409,6 +411,7 @@
 				731459751BA0C15A000257FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		731459761BA0C15A000257FF /* Build configuration list for PBXNativeTarget "Is It Prime?Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				731459781BA0C15A000257FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
